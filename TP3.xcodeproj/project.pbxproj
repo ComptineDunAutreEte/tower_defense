@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		084A0C261F84364600835D3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 084A0C251F84364600835D3E /* main.cpp */; };
+		084A0C471F843A4400835D3E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084A0C431F843A4400835D3E /* OpenGL.framework */; };
+		084A0C4F1F843BA400835D3E /* libEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 084A0C3F1F84388E00835D3E /* libEngine.a */; };
+		08576D181FDDEFF300A8CEE9 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084A0C3D1F84372900835D3E /* GLUT.framework */; };
+		08576D311FE013D700A8CEE9 /* Vaisseau.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08576D2F1FE013D700A8CEE9 /* Vaisseau.cpp */; };
+		086409C01F852AA0009C5E74 /* MyControlEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 086409B81F852AA0009C5E74 /* MyControlEngine.cpp */; };
+		086409C11F852AA0009C5E74 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 086409BA1F852AA0009C5E74 /* main.cpp */; };
+		086409C21F852AA0009C5E74 /* MyGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 086409BB1F852AA0009C5E74 /* MyGameEngine.cpp */; };
+		086409C41F852AA0009C5E74 /* MyGraphicEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 086409BE1F852AA0009C5E74 /* MyGraphicEngine.cpp */; };
+		08BC89FC1FDDDCD60043047E /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08BC89FA1FDDDCD50043047E /* Factory.cpp */; };
+		08BC89FD1FDDDCD60043047E /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08BC89FB1FDDDCD50043047E /* Terrain.cpp */; };
+		08BC8A001FDDDDF30043047E /* Case.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08BC89FF1FDDDDF30043047E /* Case.cpp */; };
+		66AB44F01FEAAB930029336E /* Missile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66AB44EB1FEAAB920029336E /* Missile.cpp */; };
+		66AB44F21FEAAB930029336E /* Asteroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66AB44EF1FEAAB930029336E /* Asteroid.cpp */; };
+		66AB44FA1FEB09E80029336E /* FactoryForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66AB44F81FEB09E80029336E /* FactoryForm.cpp */; };
+		66F6843B1FF16FA200AACF3E /* GraphicPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F6843A1FF16FA200AACF3E /* GraphicPrimitives.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +38,43 @@
 
 /* Begin PBXFileReference section */
 		084A0C221F84364600835D3E /* TP3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TP3; sourceTree = BUILT_PRODUCTS_DIR; };
-		084A0C251F84364600835D3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		084A0C3D1F84372900835D3E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		084A0C3F1F84388E00835D3E /* libEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEngine.a; path = ../../../../Downloads/uselibgraph/libMac/libEngine.a; sourceTree = "<group>"; };
+		084A0C411F843A4400835D3E /* OpenDirectory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenDirectory.framework; path = System/Library/Frameworks/OpenDirectory.framework; sourceTree = SDKROOT; };
+		084A0C421F843A4400835D3E /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		084A0C431F843A4400835D3E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		084A0C441F843A4400835D3E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		084A0C491F843B5F00835D3E /* libglut.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.dylib; path = ../../../../../../usr/local/Cellar/freeglut/3.0.0/lib/libglut.dylib; sourceTree = "<group>"; };
+		084A0C4B1F843B6C00835D3E /* libglut.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglut.a; path = ../../../../../../usr/local/Cellar/freeglut/3.0.0/lib/libglut.a; sourceTree = "<group>"; };
+		084A0C4D1F843B7E00835D3E /* libglut.3.10.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.10.0.dylib; path = ../../../../../../usr/local/Cellar/freeglut/3.0.0/lib/libglut.3.10.0.dylib; sourceTree = "<group>"; };
+		08576D2F1FE013D700A8CEE9 /* Vaisseau.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Vaisseau.cpp; path = TP3/src/Vaisseau.cpp; sourceTree = "<group>"; };
+		086409741F84CBB3009C5E74 /* exec */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = exec; path = ../../../../Downloads/uselibgraph/bin/exec; sourceTree = "<group>"; };
+		086409B81F852AA0009C5E74 /* MyControlEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyControlEngine.cpp; path = TP3/src/MyControlEngine.cpp; sourceTree = "<group>"; };
+		086409B91F852AA0009C5E74 /* MyControlEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyControlEngine.h; path = TP3/src/MyControlEngine.h; sourceTree = "<group>"; };
+		086409BA1F852AA0009C5E74 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = TP3/src/main.cpp; sourceTree = "<group>"; };
+		086409BB1F852AA0009C5E74 /* MyGameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGameEngine.cpp; path = TP3/src/MyGameEngine.cpp; sourceTree = "<group>"; };
+		086409BC1F852AA0009C5E74 /* MyGraphicEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGraphicEngine.h; path = TP3/src/MyGraphicEngine.h; sourceTree = "<group>"; };
+		086409BE1F852AA0009C5E74 /* MyGraphicEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGraphicEngine.cpp; path = TP3/src/MyGraphicEngine.cpp; sourceTree = "<group>"; };
+		086409BF1F852AA0009C5E74 /* MyGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGameEngine.h; path = TP3/src/MyGameEngine.h; sourceTree = "<group>"; };
+		08BC89F81FDDDCD50043047E /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Terrain.h; path = TP3/src/Terrain.h; sourceTree = "<group>"; };
+		08BC89F91FDDDCD50043047E /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Factory.h; path = TP3/src/Factory.h; sourceTree = "<group>"; };
+		08BC89FA1FDDDCD50043047E /* Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Factory.cpp; path = TP3/src/Factory.cpp; sourceTree = "<group>"; };
+		08BC89FB1FDDDCD50043047E /* Terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Terrain.cpp; path = TP3/src/Terrain.cpp; sourceTree = "<group>"; };
+		08BC89FE1FDDDDF20043047E /* Case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Case.h; path = TP3/src/Case.h; sourceTree = "<group>"; };
+		08BC89FF1FDDDDF30043047E /* Case.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Case.cpp; path = TP3/src/Case.cpp; sourceTree = "<group>"; };
+		08BC8A011FDDDE050043047E /* MyPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPoint.h; path = TP3/src/MyPoint.h; sourceTree = "<group>"; };
+		08BC8A021FDDDE780043047E /* Asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Asteroid.h; path = TP3/src/Asteroid.h; sourceTree = "<group>"; };
+		08BC8A031FDDDE790043047E /* Missile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Missile.h; path = TP3/src/Missile.h; sourceTree = "<group>"; };
+		08BC8A041FDDDE790043047E /* Vaisseau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vaisseau.h; path = TP3/src/Vaisseau.h; sourceTree = "<group>"; };
+		66277BD41FEE8C390045184A /* AbstractItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AbstractItem.h; path = TP3/src/AbstractItem.h; sourceTree = "<group>"; };
+		6672E24D1FE09BE200259ED0 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = TP3/include; sourceTree = "<group>"; };
+		66AB44EB1FEAAB920029336E /* Missile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Missile.cpp; path = TP3/src/Missile.cpp; sourceTree = "<group>"; };
+		66AB44EC1FEAAB920029336E /* MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyColor.h; path = TP3/src/MyColor.h; sourceTree = "<group>"; };
+		66AB44EE1FEAAB930029336E /* Forme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Forme.h; path = TP3/src/Forme.h; sourceTree = "<group>"; };
+		66AB44EF1FEAAB930029336E /* Asteroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Asteroid.cpp; path = TP3/src/Asteroid.cpp; sourceTree = "<group>"; };
+		66AB44F81FEB09E80029336E /* FactoryForm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FactoryForm.cpp; path = TP3/src/FactoryForm.cpp; sourceTree = "<group>"; };
+		66AB44F91FEB09E80029336E /* FactoryForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FactoryForm.h; path = TP3/src/FactoryForm.h; sourceTree = "<group>"; };
+		66F6843A1FF16FA200AACF3E /* GraphicPrimitives.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicPrimitives.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08576D181FDDEFF300A8CEE9 /* GLUT.framework in Frameworks */,
+				084A0C471F843A4400835D3E /* OpenGL.framework in Frameworks */,
+				084A0C4F1F843BA400835D3E /* libEngine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +94,36 @@
 		084A0C191F84364600835D3E = {
 			isa = PBXGroup;
 			children = (
+				6672E24D1FE09BE200259ED0 /* include */,
+				66277BD41FEE8C390045184A /* AbstractItem.h */,
+				66F6843A1FF16FA200AACF3E /* GraphicPrimitives.cpp */,
+				08BC8A021FDDDE780043047E /* Asteroid.h */,
+				66AB44EF1FEAAB930029336E /* Asteroid.cpp */,
+				66AB44EE1FEAAB930029336E /* Forme.h */,
+				66AB44EB1FEAAB920029336E /* Missile.cpp */,
+				08BC8A031FDDDE790043047E /* Missile.h */,
+				66AB44EC1FEAAB920029336E /* MyColor.h */,
+				66AB44F81FEB09E80029336E /* FactoryForm.cpp */,
+				66AB44F91FEB09E80029336E /* FactoryForm.h */,
+				08BC8A041FDDDE790043047E /* Vaisseau.h */,
+				08576D2F1FE013D700A8CEE9 /* Vaisseau.cpp */,
+				08BC8A011FDDDE050043047E /* MyPoint.h */,
+				08BC89FF1FDDDDF30043047E /* Case.cpp */,
+				08BC89FE1FDDDDF20043047E /* Case.h */,
+				08BC89FA1FDDDCD50043047E /* Factory.cpp */,
+				08BC89F91FDDDCD50043047E /* Factory.h */,
+				08BC89FB1FDDDCD50043047E /* Terrain.cpp */,
+				08BC89F81FDDDCD50043047E /* Terrain.h */,
+				086409BA1F852AA0009C5E74 /* main.cpp */,
+				086409B81F852AA0009C5E74 /* MyControlEngine.cpp */,
+				086409B91F852AA0009C5E74 /* MyControlEngine.h */,
+				086409BB1F852AA0009C5E74 /* MyGameEngine.cpp */,
+				086409BF1F852AA0009C5E74 /* MyGameEngine.h */,
+				086409BE1F852AA0009C5E74 /* MyGraphicEngine.cpp */,
+				086409BC1F852AA0009C5E74 /* MyGraphicEngine.h */,
 				084A0C241F84364600835D3E /* TP3 */,
 				084A0C231F84364600835D3E /* Products */,
+				084A0C3C1F84372900835D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +138,25 @@
 		084A0C241F84364600835D3E /* TP3 */ = {
 			isa = PBXGroup;
 			children = (
-				084A0C251F84364600835D3E /* main.cpp */,
 			);
 			path = TP3;
+			sourceTree = "<group>";
+		};
+		084A0C3C1F84372900835D3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				086409741F84CBB3009C5E74 /* exec */,
+				084A0C4D1F843B7E00835D3E /* libglut.3.10.0.dylib */,
+				084A0C4B1F843B6C00835D3E /* libglut.a */,
+				084A0C491F843B5F00835D3E /* libglut.dylib */,
+				084A0C441F843A4400835D3E /* OpenAL.framework */,
+				084A0C421F843A4400835D3E /* OpenCL.framework */,
+				084A0C411F843A4400835D3E /* OpenDirectory.framework */,
+				084A0C431F843A4400835D3E /* OpenGL.framework */,
+				084A0C3F1F84388E00835D3E /* libEngine.a */,
+				084A0C3D1F84372900835D3E /* GLUT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				084A0C261F84364600835D3E /* main.cpp in Sources */,
+				08BC8A001FDDDDF30043047E /* Case.cpp in Sources */,
+				086409C41F852AA0009C5E74 /* MyGraphicEngine.cpp in Sources */,
+				08BC89FD1FDDDCD60043047E /* Terrain.cpp in Sources */,
+				08BC89FC1FDDDCD60043047E /* Factory.cpp in Sources */,
+				66F6843B1FF16FA200AACF3E /* GraphicPrimitives.cpp in Sources */,
+				08576D311FE013D700A8CEE9 /* Vaisseau.cpp in Sources */,
+				086409C21F852AA0009C5E74 /* MyGameEngine.cpp in Sources */,
+				086409C11F852AA0009C5E74 /* main.cpp in Sources */,
+				086409C01F852AA0009C5E74 /* MyControlEngine.cpp in Sources */,
+				66AB44FA1FEB09E80029336E /* FactoryForm.cpp in Sources */,
+				66AB44F21FEAAB930029336E /* Asteroid.cpp in Sources */,
+				66AB44F01FEAAB930029336E /* Missile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +340,15 @@
 		084A0C2A1F84364600835D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TP3/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/TP3/libMac\"",
+					"\"$(SRCROOT)/TP3/include\"",
+				);
+				OTHER_LDFLAGS = "-IGLUT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -240,7 +356,15 @@
 		084A0C2B1F84364600835D3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TP3/include\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/TP3/libMac\"",
+					"\"$(SRCROOT)/TP3/include\"",
+				);
+				OTHER_LDFLAGS = "-IGLUT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
